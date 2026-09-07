@@ -52,16 +52,6 @@ fleet answers the majority, and the frontier model is billed only as the excepti
 - **Cache semantically** - identical intents are answered once, then served forever
 - **Meter every token** - cost becomes a first-class metric, measured on every hop
 
-## [ PRINCIPLES ]
-
-*doctrine applied to every deployment*
-
-- **`DIRECTIVE 01`** Local before cloud - a tuned laptop beats a billed API for most workloads
-- **`DIRECTIVE 02`** Quantize by default - 4-bit is the baseline, full precision is the exception
-- **`DIRECTIVE 03`** Meter every token - unmeasured inference is unmanaged spend
-- **`DIRECTIVE 04`** Reproducible artifacts - configs, seeds and evals travel with the code
-- **`DIRECTIVE 05`** Upstream first - if it solved my problem, it will probably solve yours
-
 ## [ OPEN SOURCE ]
 
 *what leaves the lab*
