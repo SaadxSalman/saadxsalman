@@ -1,0 +1,33 @@
+<svg width="900" height="282" viewBox="0 0 900 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="system boot sequence">
+  <defs>
+    <clipPath id="typeL1">
+      <rect x="32" y="66" width="0" height="20">
+        <animate attributeName="width" from="0" to="260" begin="0.4s" dur="0.7s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="884" height="266" rx="10" fill="#0A0E16" stroke="#1B2534"/>
+  <line x1="8" y1="46" x2="892" y2="46" stroke="#1B2534"/>
+  <circle cx="34" cy="27" r="5" fill="#FF5F57" opacity="0.55"/>
+  <circle cx="54" cy="27" r="5" fill="#FEBC2E" opacity="0.55"/>
+  <circle cx="74" cy="27" r="5" fill="#28C840" opacity="0.55"/>
+  <text x="450" y="31" font-size="12" fill="#5A6B85" text-anchor="middle" font-family="'JetBrains Mono','Courier New',monospace">saal@local : ~/neural_core</text>
+
+  <g font-family="'JetBrains Mono','Courier New',monospace" font-size="14">
+    <g clip-path="url(#typeL1)">
+      <text x="32" y="80" fill="#00E5FF">$ ./init --profile saad_salman</text>
+    </g>
+
+    <text x="32" y="108" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.12s" fill="freeze"/>[ ok ] large language model systems ............ <tspan fill="#3DFFA2">ONLINE</tspan></text>
+    <text x="32" y="136" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.12s" fill="freeze"/>[ ok ] small language models at the edge ........ <tspan fill="#3DFFA2">ONLINE</tspan></text>
+    <text x="32" y="164" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.12s" fill="freeze"/>[ ok ] local inference / token economics ........ <tspan fill="#3DFFA2">OPTIMIZED</tspan></text>
+    <text x="32" y="192" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="0.12s" fill="freeze"/>[ ok ] production ai pipelines .................. <tspan fill="#3DFFA2">SHIPPING</tspan></text>
+    <text x="32" y="220" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.9s" dur="0.12s" fill="freeze"/>[ ok ] open source forge ........................ <tspan fill="#3DFFA2">PUBLIC</tspan></text>
+
+    <text x="32" y="248" fill="#00E5FF" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.3s" dur="0.1s" fill="freeze"/>$</text>
+    <rect x="46" y="236" width="9" height="15" fill="#00E5FF" opacity="0">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="1.1s" begin="3.3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
