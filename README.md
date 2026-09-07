@@ -13,27 +13,6 @@
 
 </div>
 
-## [ SYSTEM ]
-
-*identity of the operator*
-
-- **`ROLE`** - machine learning / deep learning engineer for large and small language model systems
-- **`DOCTRINE`** - local-first inference / minimal token spend / reproducible artifacts
-- **`MODE`** - building in public / shipping in production
-
-I build language-model systems that run where the users are - from frontier LLMs
-reasoning over private data to quantized SLMs running silently on a laptop. The
-design principle never changes: **keep intelligence local, and spend cloud tokens
-only when they earn their price.**
-
-*current operations feed*
-
-<div align="center">
-
-<img src="assets/board.svg" width="100%" alt="operations board"/>
-
-</div>
-
 ## [ ARCHITECTURE ]
 
 *how the mesh moves a token*
@@ -89,9 +68,5 @@ fleet answers the majority, and the frontier model is billed only as the excepti
 <div align="center">
 
 <img src="assets/divider.svg" width="45%" alt=""/>
-
-<br/>
-
-<sub>EOF</sub>
 
 </div>
