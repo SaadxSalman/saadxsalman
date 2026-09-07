@@ -1,5 +1,5 @@
 <!-- ==============================================================
-     NEURAL INTERFACE v6.0 - SAAD SALMAN
+     NEURAL INTERFACE v7.0 - SAAD SALMAN
      llm systems / slm optimization / local inference
      ============================================================== -->
 
@@ -13,7 +13,7 @@
 
 </div>
 
-## 01 // SYSTEM
+## [ SYSTEM ]
 
 *identity of the operator*
 
@@ -26,20 +26,15 @@ reasoning over private data to quantized SLMs running silently on a laptop. The
 design principle never changes: **keep intelligence local, and spend cloud tokens
 only when they earn their price.**
 
-## 02 // DOMAINS
+*current operations feed*
 
-*capability map of the current stack*
+<div align="center">
 
-| DOMAIN | FOCUS |
-| :--- | :--- |
-| **LLM SYSTEMS** | Agentic pipelines / RAG at scale / fine-tuning (LoRA, QLoRA, DPO) / evaluation harnesses / open-weight deployment |
-| **SLM + EDGE** | Quantization (GGUF, AWQ, GPTQ) / knowledge distillation / pruning / 1B-8B models on consumer and mobile silicon |
-| **LOCAL INFERENCE** | Ollama / llama.cpp / vLLM / ONNX Runtime / TensorRT - on-prem, on-device, air-gapped |
-| **TOKEN ECONOMY** | SLM-first routing with LLM escalation / semantic caching / context compression / 90%+ cost reduction |
-| **PRODUCTION AI** | FastAPI services / Docker + Kubernetes / model CI/CD / observability / autoscaling inference |
-| **OPEN SOURCE** | Building in public / reproducible artifacts / permissive licensing / upstream-first mindset |
+<img src="assets/board.svg" width="100%" alt="operations board"/>
 
-## 03 // ARCHITECTURE
+</div>
+
+## [ ARCHITECTURE ]
 
 *how the mesh moves a token*
 
@@ -57,17 +52,17 @@ fleet answers the majority, and the frontier model is billed only as the excepti
 - **Cache semantically** - identical intents are answered once, then served forever
 - **Meter every token** - cost becomes a first-class metric, measured on every hop
 
-## 04 // PRINCIPLES
+## [ PRINCIPLES ]
 
 *doctrine applied to every deployment*
 
-- **`01`** Local before cloud - a tuned laptop beats a billed API for most workloads
-- **`02`** Quantize by default - 4-bit is the baseline, full precision is the exception
-- **`03`** Meter every token - unmeasured inference is unmanaged spend
-- **`04`** Reproducible artifacts - configs, seeds and evals travel with the code
-- **`05`** Upstream first - if it solved my problem, it will probably solve yours
+- **`DIRECTIVE 01`** Local before cloud - a tuned laptop beats a billed API for most workloads
+- **`DIRECTIVE 02`** Quantize by default - 4-bit is the baseline, full precision is the exception
+- **`DIRECTIVE 03`** Meter every token - unmeasured inference is unmanaged spend
+- **`DIRECTIVE 04`** Reproducible artifacts - configs, seeds and evals travel with the code
+- **`DIRECTIVE 05`** Upstream first - if it solved my problem, it will probably solve yours
 
-## 05 // OPEN SOURCE
+## [ OPEN SOURCE ]
 
 *what leaves the lab*
 
@@ -105,10 +100,8 @@ fleet answers the majority, and the frontier model is billed only as the excepti
 
 <img src="assets/divider.svg" width="45%" alt=""/>
 
-<img src="https://komarev.com/ghpvc/?username=saadxsalman&style=flat-square&label=VISITORS&color=00E5FF" alt="visitors"/>
-
 <br/>
 
-<sub>LOCAL-FIRST INTELLIGENCE - SHIPPED IN THE OPEN</sub>
+<sub>EOF</sub>
 
 </div>
