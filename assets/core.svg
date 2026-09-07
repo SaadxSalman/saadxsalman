@@ -1,0 +1,96 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Neural architecture - one core, every signal, any device">
+  <defs>
+    <pattern id="cgrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#7DD3FF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="430" fill="#05070B"/>
+  <rect width="1200" height="430" fill="url(#cgrid)"/>
+
+  <g font-family="'JetBrains Mono','Courier New',monospace">
+    <text x="60" y="30" font-size="12" letter-spacing="3" fill="#3D4C63">NEURAL ARCHITECTURE</text>
+    <text x="1140" y="30" font-size="12" letter-spacing="3" fill="#3D4C63" text-anchor="end">GENERAL INTELLIGENCE SYSTEMS</text>
+
+    <text x="50" y="172" font-size="11" letter-spacing="2" fill="#3D4C63">INPUT</text>
+    <line x1="50" y1="195" x2="516" y2="195" stroke="#00E5FF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="6 10">
+      <animate attributeName="stroke-dashoffset" from="32" to="0" dur="1.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="50" y1="255" x2="516" y2="255" stroke="#00E5FF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="6 10">
+      <animate attributeName="stroke-dashoffset" from="32" to="0" dur="2.1s" repeatCount="indefinite"/>
+    </line>
+    <text x="1150" y="172" font-size="11" letter-spacing="2" fill="#3D4C63" text-anchor="end">OUTPUT</text>
+    <line x1="684" y1="195" x2="1150" y2="195" stroke="#8A7CFF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="6 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="684" y1="255" x2="1150" y2="255" stroke="#8A7CFF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="6 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="2.3s" repeatCount="indefinite"/>
+    </line>
+
+    <g stroke-opacity="0.3" stroke-width="1.2">
+      <line x1="750" y1="225" x2="600" y2="225" stroke="#00E5FF"/>
+      <line x1="675" y1="95" x2="600" y2="225" stroke="#8A7CFF"/>
+      <line x1="525" y1="95" x2="600" y2="225" stroke="#00E5FF"/>
+      <line x1="450" y1="225" x2="600" y2="225" stroke="#8A7CFF"/>
+      <line x1="525" y1="355" x2="600" y2="225" stroke="#00E5FF"/>
+      <line x1="675" y1="355" x2="600" y2="225" stroke="#8A7CFF"/>
+    </g>
+
+    <path id="in1" d="M 750 225 L 600 225" fill="none" stroke="none"/>
+    <path id="in2" d="M 675 95 L 600 225" fill="none" stroke="none"/>
+    <path id="in3" d="M 525 95 L 600 225" fill="none" stroke="none"/>
+    <path id="in4" d="M 450 225 L 600 225" fill="none" stroke="none"/>
+    <path id="in5" d="M 525 355 L 600 225" fill="none" stroke="none"/>
+    <path id="in6" d="M 675 355 L 600 225" fill="none" stroke="none"/>
+    <path id="out1" d="M 600 225 L 750 225" fill="none" stroke="none"/>
+    <path id="out2" d="M 600 225 L 675 355" fill="none" stroke="none"/>
+    <path id="out3" d="M 600 225 L 525 355" fill="none" stroke="none"/>
+
+    <circle cx="600" cy="225" r="82" fill="none" stroke="#1E2A3A" stroke-width="1"/>
+    <circle cx="600" cy="225" r="64" fill="none" stroke="#00E5FF" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="4 10">
+      <animateTransform attributeName="transform" type="rotate" from="0 600 225" to="360 600 225" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="225" r="46" fill="#0A0E16" stroke="#00E5FF" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="600" cy="225" r="7" fill="#00E5FF">
+      <animate attributeName="r" values="6;9;6" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.55;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="600" y="325" font-size="11" letter-spacing="3" fill="#7D8CA3" text-anchor="middle">NEURAL CORE</text>
+
+    <circle cx="750" cy="225" r="9" fill="#05070B" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="750" cy="225" r="3" fill="#00E5FF"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="750" y="252" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">ACTION</text>
+
+    <circle cx="675" cy="95" r="9" fill="#05070B" stroke="#8A7CFF" stroke-width="1.5"/>
+    <circle cx="675" cy="95" r="3" fill="#8A7CFF"><animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <text x="675" y="72" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">GENERATION</text>
+
+    <circle cx="525" cy="95" r="9" fill="#05070B" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="525" cy="95" r="3" fill="#00E5FF"><animate attributeName="opacity" values="1;0.3;1" dur="2.0s" repeatCount="indefinite"/></circle>
+    <text x="525" y="72" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">PERCEPTION</text>
+
+    <circle cx="450" cy="225" r="9" fill="#05070B" stroke="#8A7CFF" stroke-width="1.5"/>
+    <circle cx="450" cy="225" r="3" fill="#8A7CFF"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <text x="450" y="252" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">MEMORY</text>
+
+    <circle cx="525" cy="355" r="9" fill="#05070B" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="525" cy="355" r="3" fill="#00E5FF"><animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite"/></circle>
+    <text x="525" y="382" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">REASONING</text>
+
+    <circle cx="675" cy="355" r="9" fill="#05070B" stroke="#8A7CFF" stroke-width="1.5"/>
+    <circle cx="675" cy="355" r="3" fill="#8A7CFF"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <text x="675" y="382" font-size="11" letter-spacing="2" fill="#7D8CA3" text-anchor="middle">DEPLOYMENT</text>
+
+    <circle r="3" fill="#00E5FF"><animateMotion dur="1.8s" begin="0s" repeatCount="indefinite"><mpath xlink:href="#in1"/></animateMotion></circle>
+    <circle r="3" fill="#8A7CFF"><animateMotion dur="2.0s" begin="-0.9s" repeatCount="indefinite"><mpath xlink:href="#in2"/></animateMotion></circle>
+    <circle r="3" fill="#00E5FF"><animateMotion dur="1.7s" begin="-0.5s" repeatCount="indefinite"><mpath xlink:href="#in3"/></animateMotion></circle>
+    <circle r="3" fill="#8A7CFF"><animateMotion dur="2.2s" begin="-1.2s" repeatCount="indefinite"><mpath xlink:href="#in4"/></animateMotion></circle>
+    <circle r="3" fill="#00E5FF"><animateMotion dur="1.9s" begin="-0.3s" repeatCount="indefinite"><mpath xlink:href="#in5"/></animateMotion></circle>
+    <circle r="3" fill="#8A7CFF"><animateMotion dur="2.1s" begin="-1.6s" repeatCount="indefinite"><mpath xlink:href="#in6"/></animateMotion></circle>
+    <circle r="3" fill="#3DFFA2"><animateMotion dur="2.6s" begin="0s" repeatCount="indefinite"><mpath xlink:href="#out1"/></animateMotion></circle>
+    <circle r="3" fill="#3DFFA2"><animateMotion dur="2.8s" begin="-1.4s" repeatCount="indefinite"><mpath xlink:href="#out2"/></animateMotion></circle>
+    <circle r="3" fill="#3DFFA2"><animateMotion dur="2.7s" begin="-2.0s" repeatCount="indefinite"><mpath xlink:href="#out3"/></animateMotion></circle>
+
+    <text x="600" y="418" font-size="11" letter-spacing="3" fill="#3D4C63" text-anchor="middle">SIGNALS IN // INTELLIGENCE OUT</text>
+  </g>
+</svg>

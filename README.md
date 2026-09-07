@@ -15,21 +15,18 @@
 
 ## [ ARCHITECTURE ]
 
-*how the mesh moves a token*
+*one core - every signal - any device*
 
 <div align="center">
 
-<img src="assets/mesh.svg" width="100%" alt="local-first inference mesh"/>
+<img src="assets/core.svg" width="100%" alt="neural architecture - general intelligence systems"/>
 
 </div>
 
-**The mesh in one line:** every request enters through one smart router - a local SLM
-fleet answers the majority, and the frontier model is billed only as the exception.
-
-- **Route small, escalate smart** - local SLMs absorb the bulk of traffic; the cloud LLM is a fallback, not a default
-- **Quantize ruthlessly** - 4-bit checkpoints keep near-full quality at a fraction of the memory footprint
-- **Cache semantically** - identical intents are answered once, then served forever
-- **Meter every token** - cost becomes a first-class metric, measured on every hop
+- **End-to-end by design** - raw signals in, shipped systems out, one continuous pipeline
+- **General over narrow** - perception, memory, reasoning and generation composed as a single architecture
+- **Boring where it matters** - dependable infrastructure underneath ambitious models
+- **Instrumented always** - every system carries its own telemetry from day one
 
 ## [ OPEN SOURCE ]
 
