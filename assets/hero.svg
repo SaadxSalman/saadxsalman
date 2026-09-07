@@ -39,7 +39,7 @@
 
   <g font-family="'JetBrains Mono','Courier New',monospace">
     <text x="52" y="38" font-size="12" fill="#3D4C63" letter-spacing="2">SAAL-OS // PROFILE INTERFACE</text>
-    <text x="1148" y="38" font-size="12" fill="#3D4C63" letter-spacing="2" text-anchor="end">REV 5.0</text>
+    <text x="1148" y="38" font-size="12" fill="#3D4C63" letter-spacing="2" text-anchor="end">REV 6.0</text>
 
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0 120 168" to="360 120 168" dur="14s" repeatCount="indefinite"/>

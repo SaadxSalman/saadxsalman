@@ -1,5 +1,5 @@
 <!-- ==============================================================
-     NEURAL INTERFACE v5.0 - SAAD SALMAN
+     NEURAL INTERFACE v6.0 - SAAD SALMAN
      llm systems / slm optimization / local inference
      ============================================================== -->
 
@@ -13,12 +13,22 @@
 
 </div>
 
-I build **language-model systems that run where the users are** - from frontier LLMs
-reasoning over private data to quantized SLMs running silently on a laptop. The design
-principle never changes: **keep intelligence local, and spend cloud tokens only when
-they earn their price.**
+## 01 // SYSTEM
 
-## 01 // DOMAINS
+*identity of the operator*
+
+- **`ROLE`** - machine learning / deep learning engineer for large and small language model systems
+- **`DOCTRINE`** - local-first inference / minimal token spend / reproducible artifacts
+- **`MODE`** - building in public / shipping in production
+
+I build language-model systems that run where the users are - from frontier LLMs
+reasoning over private data to quantized SLMs running silently on a laptop. The
+design principle never changes: **keep intelligence local, and spend cloud tokens
+only when they earn their price.**
+
+## 02 // DOMAINS
+
+*capability map of the current stack*
 
 | DOMAIN | FOCUS |
 | :--- | :--- |
@@ -29,7 +39,9 @@ they earn their price.**
 | **PRODUCTION AI** | FastAPI services / Docker + Kubernetes / model CI/CD / observability / autoscaling inference |
 | **OPEN SOURCE** | Building in public / reproducible artifacts / permissive licensing / upstream-first mindset |
 
-## 02 // ARCHITECTURE
+## 03 // ARCHITECTURE
+
+*how the mesh moves a token*
 
 <div align="center">
 
@@ -45,65 +57,27 @@ fleet answers the majority, and the frontier model is billed only as the excepti
 - **Cache semantically** - identical intents are answered once, then served forever
 - **Meter every token** - cost becomes a first-class metric, measured on every hop
 
-## 03 // STACK
+## 04 // PRINCIPLES
 
-**`NEURAL CORE`**
+*doctrine applied to every deployment*
 
-<img src="https://img.shields.io/badge/PYTHON-0A0E16?style=flat-square&logo=python&logoColor=00E5FF" alt="python"/>
-<img src="https://img.shields.io/badge/PYTORCH-0A0E16?style=flat-square&logo=pytorch&logoColor=00E5FF" alt="pytorch"/>
-<img src="https://img.shields.io/badge/TENSORFLOW-0A0E16?style=flat-square&logo=tensorflow&logoColor=00E5FF" alt="tensorflow"/>
-<img src="https://img.shields.io/badge/HUGGING%20FACE-0A0E16?style=flat-square&logo=huggingface&logoColor=00E5FF" alt="huggingface"/>
-<img src="https://img.shields.io/badge/CUDA-0A0E16?style=flat-square&logo=nvidia&logoColor=00E5FF" alt="cuda"/>
-<img src="https://img.shields.io/badge/NUMPY-0A0E16?style=flat-square&logo=numpy&logoColor=00E5FF" alt="numpy"/>
-
-**`INFERENCE ENGINE ROOM`**
-
-<img src="https://img.shields.io/badge/OLLAMA-0A0E16?style=flat-square&logo=ollama&logoColor=3DFFA2" alt="ollama"/>
-<img src="https://img.shields.io/badge/LLAMA.CPP-0A0E16?style=flat-square&logo=cplusplus&logoColor=3DFFA2" alt="llama.cpp"/>
-<img src="https://img.shields.io/badge/VLLM-0A0E16?style=flat-square" alt="vllm"/>
-<img src="https://img.shields.io/badge/GGUF%204--BIT-0A0E16?style=flat-square" alt="gguf"/>
-<img src="https://img.shields.io/badge/ONNX-0A0E16?style=flat-square&logo=onnx&logoColor=3DFFA2" alt="onnx"/>
-<img src="https://img.shields.io/badge/TENSORRT-0A0E16?style=flat-square&logo=nvidia&logoColor=3DFFA2" alt="tensorrt"/>
-
-**`AGENT ORCHESTRATION`**
-
-<img src="https://img.shields.io/badge/LANGCHAIN-0A0E16?style=flat-square&logo=langchain&logoColor=8A7CFF" alt="langchain"/>
-<img src="https://img.shields.io/badge/LANGGRAPH-0A0E16?style=flat-square" alt="langgraph"/>
-<img src="https://img.shields.io/badge/LLAMAINDEX-0A0E16?style=flat-square&logo=llamaindex&logoColor=8A7CFF" alt="llamaindex"/>
-<img src="https://img.shields.io/badge/TRANSFORMERS-0A0E16?style=flat-square&logo=huggingface&logoColor=8A7CFF" alt="transformers"/>
-
-**`SHIP IT DECK`**
-
-<img src="https://img.shields.io/badge/DOCKER-0A0E16?style=flat-square&logo=docker&logoColor=E6F1FF" alt="docker"/>
-<img src="https://img.shields.io/badge/KUBERNETES-0A0E16?style=flat-square&logo=kubernetes&logoColor=E6F1FF" alt="kubernetes"/>
-<img src="https://img.shields.io/badge/FASTAPI-0A0E16?style=flat-square&logo=fastapi&logoColor=E6F1FF" alt="fastapi"/>
-<img src="https://img.shields.io/badge/RUST-0A0E16?style=flat-square&logo=rust&logoColor=E6F1FF" alt="rust"/>
-<img src="https://img.shields.io/badge/TYPESCRIPT-0A0E16?style=flat-square&logo=typescript&logoColor=E6F1FF" alt="typescript"/>
-<img src="https://img.shields.io/badge/GIT-0A0E16?style=flat-square&logo=git&logoColor=E6F1FF" alt="git"/>
-<img src="https://img.shields.io/badge/GITHUB%20ACTIONS-0A0E16?style=flat-square&logo=githubactions&logoColor=E6F1FF" alt="github actions"/>
-
-## 04 // TELEMETRY
-
-<div align="center">
-
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=saadxsalman&show_icons=true&hide_border=true&bg_color=05070B&title_color=00E5FF&icon_color=8A7CFF&text_color=E6F1FF" alt="github stats"/>
-<img height="160em" src="https://streak-stats.demolab.com?user=saadxsalman&hide_border=true&background=05070B&ring=00E5FF&fire=8A7CFF&currStreakNum=E6F1FF&sideNums=E6F1FF&currStreakLabel=00E5FF&sideLabels=7D8CA3&dates=5A6B85" alt="streak stats"/>
-
-<img height="145em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saadxsalman&layout=compact&hide_border=true&bg_color=05070B&title_color=00E5FF&text_color=E6F1FF&langs_count=8" alt="top languages"/>
-
-</div>
+- **`01`** Local before cloud - a tuned laptop beats a billed API for most workloads
+- **`02`** Quantize by default - 4-bit is the baseline, full precision is the exception
+- **`03`** Meter every token - unmeasured inference is unmanaged spend
+- **`04`** Reproducible artifacts - configs, seeds and evals travel with the code
+- **`05`** Upstream first - if it solved my problem, it will probably solve yours
 
 ## 05 // OPEN SOURCE
 
-> Good infrastructure outlives its authors. Every inference config, quantization
-> recipe and evaluation harness I build gets upstreamed - in public, under
-> permissive licenses, with the docs that make it reusable.
+*what leaves the lab*
+
+> Good infrastructure outlives its authors. What I build gets upstreamed - in
+> public, under permissive licenses, with the docs that make it reusable.
+> PRs welcome.
+
+**`UPSTREAMED:`** inference runtimes - quantization recipes - eval harnesses - agent scaffolds
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/PRS%20WELCOME-0A0E16?style=flat-square&logo=github&logoColor=3DFFA2" alt="prs welcome"/>
-<img src="https://img.shields.io/badge/OPEN%20SOURCE%20FOREVER-0A0E16?style=flat-square&logo=github&logoColor=00E5FF" alt="open source"/>
-<img src="https://img.shields.io/badge/MIT%20%2F%20APACHE--2.0-0A0E16?style=flat-square&logo=github&logoColor=8A7CFF" alt="license"/>
 
 <!-- contribution snake - generated by .github/workflows/snake.yml into the output branch -->
 <picture>
