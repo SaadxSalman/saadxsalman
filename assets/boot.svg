@@ -16,7 +16,7 @@
 
   <g font-family="'JetBrains Mono','Courier New',monospace" font-size="14">
     <g clip-path="url(#typeL1)">
-      <text x="32" y="80" fill="#00E5FF">$ ./init --profile saad_salman</text>
+      <text x="32" y="80" fill="#00E5FF">$ ./init --profile saadxsalman</text>
     </g>
 
     <text x="32" y="108" fill="#7D8CA3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.12s" fill="freeze"/>[ ok ] large language model systems ............ <tspan fill="#3DFFA2">ONLINE</tspan></text>
