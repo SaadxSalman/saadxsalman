@@ -13,25 +13,15 @@
 
 </div>
 
-## [ ARCHITECTURE ]
-
-*one core - every signal - any device*
-
 <div align="center">
 
 <img src="assets/core.svg" width="100%" alt="neural architecture - general intelligence systems"/>
 
 </div>
 
-## [ OPEN SOURCE ]
-
-*what leaves the lab*
-
 > Good infrastructure outlives its authors. What I build gets upstreamed - in
 > public, under permissive licenses, with the docs that make it reusable.
 > PRs welcome.
-
-**`UPSTREAMED:`** inference runtimes - quantization recipes - eval harnesses - agent scaffolds
 
 ---
 
