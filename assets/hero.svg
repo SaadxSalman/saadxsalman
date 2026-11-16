@@ -1,192 +1,90 @@
-<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Saad Salman — Deep Learning × Systems Engineering">
-
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Saad Salman - Machine Learning and Deep Learning Systems Engineer">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="28%" r="65%">
-      <stop offset="0%" stop-color="#070C18"/>
-      <stop offset="100%" stop-color="#020407"/>
-    </radialGradient>
-    <radialGradient id="vpAtmo" cx="50%" cy="23.5%" r="22%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.09"/>
-      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00C8F0"/>
-      <stop offset="45%" stop-color="#EAF8FF"/>
-      <stop offset="100%" stop-color="#9080FF"/>
+    <linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070B"/>
+      <stop offset="1" stop-color="#080D16"/>
     </linearGradient>
-    <clipPath id="scan">
-      <rect x="-360" y="135" width="310" height="78">
-        <animate attributeName="x" from="-360" to="1250" dur="4.5s" repeatCount="indefinite"/>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#EAF7FF"/>
+      <stop offset="1" stop-color="#8A7CFF"/>
+    </linearGradient>
+    <pattern id="hgrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#7DD3FF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="hglow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="sweep">
+      <rect x="-260" y="130" width="240" height="60">
+        <animate attributeName="x" from="-260" to="1200" dur="5s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
-    <filter id="nameGlow" x="-15%" y="-60%" width="130%" height="220%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feColorMatrix in="b" type="matrix"
-        values="0 0 0 0 0
-                0 0 0 0 0.85
-                0 0 0 0 1
-                0 0 0 0.55 0" result="c"/>
-      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <!-- Particle paths: bottom → VP (600, 80) -->
-    <path id="gp0" d="M 0 340 L 600 80"/>
-    <path id="gp1" d="M 218 340 L 600 80"/>
-    <path id="gp2" d="M 436 340 L 600 80"/>
-    <path id="gp3" d="M 600 340 L 600 80"/>
-    <path id="gp4" d="M 764 340 L 600 80"/>
-    <path id="gp5" d="M 982 340 L 600 80"/>
-    <path id="gp6" d="M 1200 340 L 600 80"/>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="340" fill="url(#bg)"/>
-  <rect width="1200" height="340" fill="url(#vpAtmo)"/>
+  <rect width="1200" height="320" fill="url(#hbg)"/>
+  <rect width="1200" height="320" fill="url(#hgrid)"/>
+  <rect x="14" y="14" width="1172" height="292" fill="none" stroke="#1B2534" stroke-width="1"/>
 
-  <!-- === PERSPECTIVE GRID: VP at (600,80), ground at y=340 === -->
-
-  <!-- Vertical converging lines -->
-  <g stroke="#00D4FF" stroke-width="0.75" opacity="0.07">
-    <line x1="0"    y1="340" x2="600" y2="80"/>
-    <line x1="109"  y1="340" x2="600" y2="80"/>
-    <line x1="218"  y1="340" x2="600" y2="80"/>
-    <line x1="327"  y1="340" x2="600" y2="80"/>
-    <line x1="436"  y1="340" x2="600" y2="80"/>
-    <line x1="545"  y1="340" x2="600" y2="80"/>
-    <line x1="655"  y1="340" x2="600" y2="80"/>
-    <line x1="764"  y1="340" x2="600" y2="80"/>
-    <line x1="873"  y1="340" x2="600" y2="80"/>
-    <line x1="982"  y1="340" x2="600" y2="80"/>
-    <line x1="1091" y1="340" x2="600" y2="80"/>
-    <line x1="1200" y1="340" x2="600" y2="80"/>
+  <g stroke="#00E5FF" stroke-opacity="0.8" stroke-width="1.5" fill="none">
+    <path d="M 14 40 V 14 H 40"/>
+    <path d="M 1160 14 H 1186 V 40"/>
+    <path d="M 1186 280 V 306 H 1160"/>
+    <path d="M 40 306 H 14 V 280"/>
   </g>
 
-  <!-- Horizontal depth rings (t=0.15…1.0 — y = 80+260t, x = 600±600t) -->
-  <g stroke="#00D4FF" stroke-width="0.6">
-    <line x1="510" y1="119" x2="690" y2="119" opacity="0.04"/>
-    <line x1="420" y1="158" x2="780" y2="158" opacity="0.055"/>
-    <line x1="330" y1="197" x2="870" y2="197" opacity="0.07"/>
-    <line x1="240" y1="236" x2="960" y2="236" opacity="0.085"/>
-    <line x1="150" y1="275" x2="1050" y2="275" opacity="0.10"/>
-    <line x1="60"  y1="314" x2="1140" y2="314" opacity="0.12"/>
-    <line x1="0"   y1="340" x2="1200" y2="340" opacity="0.07"/>
-  </g>
-
-  <!-- Grid intersection nodes at t=0.6 depth -->
-  <g fill="#00E5FF" opacity="0.18">
-    <circle cx="240" cy="236" r="1.5"/>
-    <circle cx="371" cy="236" r="1.5"/>
-    <circle cx="502" cy="236" r="1.5"/>
-    <circle cx="600" cy="236" r="1.5"/>
-    <circle cx="698" cy="236" r="1.5"/>
-    <circle cx="829" cy="236" r="1.5"/>
-    <circle cx="960" cy="236" r="1.5"/>
-  </g>
-
-  <!-- Tensor dimension annotations (very subtle) -->
-  <g font-family="'JetBrains Mono','Courier New',monospace" font-size="8" fill="#00E5FF" opacity="0.11" letter-spacing="1">
-    <text x="244" y="233">[d=512]</text>
-    <text x="602" y="233">[∞]</text>
-    <text x="700" y="233">[d=512]</text>
-    <text x="373" y="233">[rank=4]</text>
-    <text x="831" y="233">[rank=4]</text>
-  </g>
-
-  <!-- === ANIMATED PARTICLES: flowing toward VP === -->
-  <circle r="2" fill="#00E5FF">
-    <animateMotion dur="3.2s" begin="0s" repeatCount="indefinite"><mpath xlink:href="#gp1"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.9;0.7;0" dur="3.2s" begin="0s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2.5;1.5;0.5" dur="3.2s" begin="0s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#8A7CFF">
-    <animateMotion dur="2.8s" begin="-1.0s" repeatCount="indefinite"><mpath xlink:href="#gp3"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.8;0.6;0" dur="2.8s" begin="-1.0s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2;1.5;0.5" dur="2.8s" begin="-1.0s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#00E5FF">
-    <animateMotion dur="3.6s" begin="-1.8s" repeatCount="indefinite"><mpath xlink:href="#gp5"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.9;0.6;0" dur="3.6s" begin="-1.8s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2;1.2;0.5" dur="3.6s" begin="-1.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#8A7CFF">
-    <animateMotion dur="3.0s" begin="-0.5s" repeatCount="indefinite"><mpath xlink:href="#gp2"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.8;0.5;0" dur="3.0s" begin="-0.5s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2.5;1.2;0.5" dur="3.0s" begin="-0.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#3DFFA2">
-    <animateMotion dur="2.6s" begin="-2.1s" repeatCount="indefinite"><mpath xlink:href="#gp0"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.9;0.6;0" dur="2.6s" begin="-2.1s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="1.8;1;0.5" dur="2.6s" begin="-2.1s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#3DFFA2">
-    <animateMotion dur="3.4s" begin="-1.4s" repeatCount="indefinite"><mpath xlink:href="#gp6"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.9;0.5;0" dur="3.4s" begin="-1.4s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="1.5;0.8;0.3" dur="3.4s" begin="-1.4s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="2" fill="#00E5FF">
-    <animateMotion dur="4.0s" begin="-3.0s" repeatCount="indefinite"><mpath xlink:href="#gp4"/></animateMotion>
-    <animate attributeName="opacity" values="0;0.7;0.5;0" dur="4.0s" begin="-3.0s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="2;1;0.5" dur="4.0s" begin="-3.0s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- === UI CHROME === -->
-  <rect x="14" y="14" width="1172" height="312" fill="none" stroke="#0D1C2E" stroke-width="1"/>
-
-  <!-- Corner brackets -->
-  <g stroke="#00E5FF" stroke-width="1.6" fill="none" opacity="0.9">
-    <path d="M 14 52 V 14 H 52"/>
-    <path d="M 1148 14 H 1186 V 52"/>
-    <path d="M 1186 288 V 326 H 1148"/>
-    <path d="M 52 326 H 14 V 288"/>
-  </g>
-
-  <!-- Side tick marks -->
-  <g stroke="#00E5FF" stroke-width="1" opacity="0.3">
-    <line x1="14" y1="82" x2="22" y2="82"/>
-    <line x1="14" y1="258" x2="22" y2="258"/>
-    <line x1="1178" y1="82" x2="1186" y2="82"/>
-    <line x1="1178" y1="258" x2="1186" y2="258"/>
-  </g>
-
-  <!-- === TEXT CONTENT === -->
   <g font-family="'JetBrains Mono','Courier New',monospace">
+    <text x="52" y="38" font-size="12" fill="#3D4C63" letter-spacing="2">SAAL-OS // PROFILE INTERFACE</text>
+    <text x="1148" y="38" font-size="12" fill="#3D4C63" letter-spacing="2" text-anchor="end">REV 6.0</text>
 
-    <!-- Top bar -->
-    <text x="66" y="37" font-size="10.5" fill="#182A40" letter-spacing="2.8">IDENTITY MODULE // PROFILE INTERFACE</text>
-    <text x="1134" y="37" font-size="10.5" fill="#182A40" letter-spacing="2.5" text-anchor="end">NODE : SAAD_SALMAN</text>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 120 168" to="360 120 168" dur="14s" repeatCount="indefinite"/>
+      <circle cx="120" cy="168" r="46" fill="none" stroke="#00E5FF" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="40 249"/>
+      <circle cx="120" cy="168" r="33" fill="none" stroke="#00E5FF" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="26 181"/>
+      <circle cx="120" cy="168" r="20" fill="none" stroke="#00E5FF" stroke-opacity="0.14" stroke-width="1.5" stroke-dasharray="14 112"/>
+    </g>
+    <circle cx="120" cy="168" r="3" fill="#00E5FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
 
-    <!-- Domain label -->
-    <text x="600" y="116" font-size="12" letter-spacing="7" fill="#00E5FF" fill-opacity="0.72" text-anchor="middle">DEEP LEARNING  ×  SYSTEMS ENGINEERING</text>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360 1080 168" to="0 1080 168" dur="14s" repeatCount="indefinite"/>
+      <circle cx="1080" cy="168" r="46" fill="none" stroke="#8A7CFF" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="40 249"/>
+      <circle cx="1080" cy="168" r="33" fill="none" stroke="#8A7CFF" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="26 181"/>
+      <circle cx="1080" cy="168" r="20" fill="none" stroke="#8A7CFF" stroke-opacity="0.14" stroke-width="1.5" stroke-dasharray="14 112"/>
+    </g>
+    <circle cx="1080" cy="168" r="3" fill="#8A7CFF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
 
-    <!-- Main name: glow base layer -->
-    <text x="600" y="195" font-size="60" letter-spacing="14" fill="#A8C8E8" text-anchor="middle" font-weight="700" filter="url(#nameGlow)">SAAD SALMAN</text>
-    <!-- Scan highlight -->
-    <text x="600" y="195" font-size="60" letter-spacing="14" fill="url(#nameGrad)" text-anchor="middle" font-weight="700" clip-path="url(#scan)">SAAD SALMAN</text>
+    <text x="600" y="126" font-size="15" letter-spacing="6" fill="#00E5FF" fill-opacity="0.85" text-anchor="middle">MACHINE LEARNING x DEEP LEARNING SYSTEMS</text>
 
-    <!-- Animated separator -->
-    <path d="M 445 215 H 755" stroke="#0E2035" stroke-width="1" stroke-dasharray="4 8">
-      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+    <g font-weight="bold" text-anchor="middle" filter="url(#hglow)">
+      <text x="600" y="182" font-size="58" letter-spacing="14" fill="#DCEBFF">SAAD SALMAN</text>
+      <text x="600" y="182" font-size="58" letter-spacing="14" fill="url(#shine)" clip-path="url(#sweep)">SAAD SALMAN</text>
+    </g>
+
+    <path d="M 470 202 H 730" stroke="#1E2A3A" stroke-width="1" stroke-dasharray="2 6">
+      <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.2s" repeatCount="indefinite"/>
     </path>
 
-    <!-- Tagline -->
-    <text x="600" y="248" font-size="11" letter-spacing="2.5" fill="#3A5168" text-anchor="middle">LLM SYSTEMS / SLM OPTIMIZATION / LOCAL INFERENCE / TOKEN ECONOMY / OPEN SOURCE</text>
+    <text x="600" y="234" font-size="13" letter-spacing="3" fill="#7D8CA3" text-anchor="middle">LLM SYSTEMS / SLM OPTIMIZATION / LOCAL INFERENCE / TOKEN ECONOMY / OPEN SOURCE</text>
 
-    <!-- Bottom status -->
-    <circle cx="66" cy="307" r="3.5" fill="#3DFFA2">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="76" y="311" font-size="10" letter-spacing="2.5" fill="#182A40">SYSTEM : ONLINE</text>
+    <g font-size="11" letter-spacing="2">
+      <circle cx="52" cy="285" r="3" fill="#3DFFA2">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="62" y="289" fill="#3D4C63">STATUS : OPERATIONAL</text>
+      <text x="1148" y="289" fill="#3D4C63" text-anchor="end">TOKEN COST : OPTIMIZED</text>
+    </g>
 
-    <circle cx="1012" cy="307" r="3.5" fill="#8A7CFF">
-      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="1022" y="311" font-size="10" letter-spacing="2.5" fill="#182A40">vectorphile : ACTIVE</text>
-
-    <!-- Bottom sweep line -->
-    <line x1="56" y1="323" x2="1144" y2="323" stroke="#08121E" stroke-width="1"/>
-    <line x1="56" y1="323" x2="1144" y2="323" stroke="#00E5FF" stroke-width="1" stroke-dasharray="110 978" stroke-opacity="0.65">
-      <animate attributeName="stroke-dashoffset" from="1088" to="0" dur="9s" repeatCount="indefinite"/>
-    </line>
-
+    <path d="M 40 302 H 1160" stroke="#0E1826" stroke-width="1"/>
+    <path d="M 40 302 H 1160" stroke="#00E5FF" stroke-width="1" stroke-dasharray="80 1040" stroke-opacity="0.7">
+      <animate attributeName="stroke-dashoffset" from="1120" to="0" dur="6s" repeatCount="indefinite"/>
+    </path>
   </g>
-
 </svg>
